@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: white;
+    font-size: 15px;
+    font-family: 'inter';
+    font-weight: 400;
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto;
+}   
+.container{
+    margin: 12vh;
+    margin-top: 24vh;
+    width: 1150px;
+    height: 440px;
+    display: grid;
+    grid-template-columns: 610px auto;
+    grid-template-rows: 442px;
+    overflow: hidden;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.5rem;
+}
+.info{
+   display: grid;
+    grid-template-rows: 221px auto;
+    text-align: left;
+    padding-left: 5rem; 
+}
+.benefits{
+    width: 350px;
+    margin-top: 4rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.benefits h1{
+    font-size: 2.5rem;
+    width: 425px;
+    margin-bottom: 3rem;
+    color:white;
+}
+.numbers{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 8rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.numbers p{
+    font-size: 14px;
+    font-family: 'lexend deca';
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.purple{
+    color: hsl(277, 64%, 61%);
+}
+.image{
+    width: auto;
+    background-image: url(./images/image-header-desktop.jpg);
+    z-index: 2;
+    overflow: hidden;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 1;
+    background-color: hsl(277, 98%, 26%); 
+}
+
+@media (max-width: 1200px){
+    .container{
+        width: 800px;
+        height: 440px;
+        grid-template-columns: 400px 400px;
+        grid-template-rows: 442px;
+    }
+}
+    .info{
+         padding-left: 2rem; 
+    }
+    .benefits h1{
+        font-size: 2rem;
+        width: 390px;
+}
+@media (max-width: 800px) {
+    .container{
+        width: 280px;
+        height: 670px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info{
+        width: 280px;
+        height: 500px;
+        padding: 2rem;
+        padding-top: 0;
+        padding-bottom: 0.5rem;
+    }
+    .benefits h1{
+        font-size: 1.4rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        color:white;
+        text-align: center;
+    }
+    .benefits{
+        width: 100%;
+        margin-top: 2rem;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    .benefits p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .numbers{
+        margin-top: 0;
+        grid-template-columns: auto;
+        place-items: center;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .numbers p{
+        font-size: 12px;
+        padding: 5px;
+    }
+    .image{
+        width: 100%;
+        height: 200px;
+        background-image: url(./images/image-header-mobile.jpg);
+        background-size: 100%;
+    }
+    .layer{
+        width: 100%;
+        height: 100%;
+        opacity: 0.6;
+        background-color: hsl(277, 98%, 26%); 
+    }
+
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
